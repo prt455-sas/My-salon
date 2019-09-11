@@ -12,5 +12,9 @@ namespace MySalon.Controllers
         {
             return View();
         }
+        public IActionResult ContactUsEmail()
+        {
+            return View();
+        }
     }
 }
