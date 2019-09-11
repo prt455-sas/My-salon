@@ -1,0 +1,150 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+}
+.background_image {
+    width:350px;
+    height:250px;
+}
+#haircutContainer {
+    background: url(../Images/haircut8.jpg);
+    height: 500px;
+    width: 1265px;
+}
+
+.full-image-background {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background: no-repeat center center scroll;
+    background-image: url(../Images/Blackbackground.jpeg);
+    height: 640px;
+}
+
+.full-salon-background {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background: no-repeat center center scroll;
+    background-image: url(../Images/haircut.jpg);
+    height: 640px;
+}
+
+.full-booking-background {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background: no-repeat center center scroll;
+    background-image: url(../Images/calendar.png);
+    height: 640px;
+}
+
+.full-contact-background {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background: no-repeat center center scroll;
+    background-image: url(../Images/contact-background.png);
+    height: 640px;
+    width: 
+}
+
+.full-appointment-background {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background: no-repeat center center scroll;
+    background-image: url(../Images/hairtreatment.jpg);
+    height: 640px;
+}
+
+.full-image-background .row {
+        margin: 0 !important;
+}
+
+#banner-area-wrapper {
+    width: auto;
+    position: relative;
+}
+
+#banner-area {
+    position: static;
+    text-align: center;
+    width: auto;
+    max-width: 1200px;
+    height: auto;
+    padding-top: 300px;
+    margin: auto;
+    padding-bottom: 300px;
+}
+
+#page-thumb {
+    display: block;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    position: absolute;
+    height: 100%;
+}
+
+.booking-fields-color {
+    color: white;
+}
