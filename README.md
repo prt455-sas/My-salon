@@ -1,2 +1,2 @@
 # My-salon
-C# Learning
+A Complete Salon application you need!
