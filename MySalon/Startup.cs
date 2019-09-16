@@ -26,6 +26,26 @@ namespace MySalon
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
+            EmailServerConfiguration config = new EmailServerConfiguration
+            {
+                SmtpPassword = "Mysalon@prt455",
+                SmtpServer = "smtp.live.com",
+                SmtpUsername = "mysalon2019@hotmail.com"
+            };
+
+            EmailAddress FromEmailAddress = new EmailAddress
+            {
+                Address = "mysalon2019@hotmail.com",
+                Name = "Peter Brown"
+            };
+
+            services.AddSingleton<EmailServerConfiguration>(config);
+            services.AddTransient<IEmailService, MailKitEmailService>();
+            services.AddSingleton<EmailAddress>(FromEmailAddress);
+            services.AddMvc();
+
+
             services.Configure<CookiePolicyOptions>(options =>
             {
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.

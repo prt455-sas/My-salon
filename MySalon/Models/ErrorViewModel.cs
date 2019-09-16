@@ -1,6 +1,6 @@
 using System;
 
-namespace MySalon.Models
+namespace ContactForm.Models
 {
     public class ErrorViewModel
     {
