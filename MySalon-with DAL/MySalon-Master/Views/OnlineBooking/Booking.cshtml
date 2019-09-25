@@ -1,0 +1,26 @@
+﻿@using MySalon_Master.Controllers
+@model object
+@{
+    ViewData["Title"] = "OnlineBooking";
+}
+<header class="py-5 full-appointment-background">
+    <div class="container">
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label class="booking-fields-color" for="inputUsername4">Username</label>
+                    <input type="text" class="form-control" id="inputUsername4" placeholder="Login Username">
+                </div>
+                <div class="form-group col-md-6">
+                    <label class="booking-fields-color" for="selectDate4">Select Date</label>
+                    <input type="date" class="form-control" id="selectDate4" placeholder="Pick Date">
+                </div>
+                <div class="form-group col-md-6">
+                    <label class="booking-fields-color" for="selectTime">Select Time</label>
+                    <input type="time" class="form-control" id="selectTime">
+                </div>
+            </div>       
+            <button type="submit" class="btn btn-primary">Make Appointment</button>
+        </form>
+    </div>
+</header>
