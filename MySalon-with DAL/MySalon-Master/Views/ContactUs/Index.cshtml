@@ -11,18 +11,18 @@
             <h3>Send Us Email!</h3>
             <form asp-action="Index" asp-controller="ContactUs" method="post">
                 <div>
-                    <label asp-for="Name">Please enter your name:</label><br/>
-                    <input type="text" asp-for="Name"/>
+                    <label asp-for="Name">Your Name:</label><br/>
+                    <input type="text" asp-for="Name" placeholder="Name"/>
                 </div>
                 <div>
-                    <label asp-for="Email">Please enter your email:</label><br/>
-                    <input type="text" asp-for="Email"/>
+                    <label asp-for="Email">Your Email:</label><br/>
+                    <input type="text" asp-for="Email" placeholder="Email address"/>
                 </div>
                 <div>
-                    <label asp-for="Message">Please enter your message:</label><br/>
-                    <textarea asp-for="Message"></textarea>
+                    <label asp-for="Message">Your Message:</label><br/>
+                    <textarea asp-for="Message" placeholder="Message Here"></textarea>
                 </div>
-                <input type="submit" value="Send Message!"/>
+                <button class="btn btn-success" type="submit" value="Send Message!">Send Message</button>
             </form>
         </div>
         <div class="col">
