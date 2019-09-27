@@ -1,46 +1,74 @@
-﻿@using MySalon_Master.Controllers
-@model object
-@{
+﻿@{
     ViewData["Title"] = "Contact Us";
 }
-<div class="container">
-    <h2>Contact My Salon</h2>
-    <p>WHY US?</p>
-    <p>Our mission is simple: fashion forward style, mastery of the latest hair trends and techniques, superior customer service, and a personal dedication to excellence.</p></p>
-    <p>Contact: 0450 520 690</p>
-    <p>Address: 1/120 Mitchell Street, Darwin, Northern Territory Pearl st. Boulder, Co. 0820</p>
-    <p>Salon Hours:</p>
-    <p>Monday-Friday: 10am-8pm
-        Saturday: 10am-5pm
-        Closed on Sunday</p>
-    <div class="container">
-        <style>
-         /* Always set the map height explicitly to define the size of the div
-        * element that contains the map. */
-            #map {
-                height: 400px;
-                width: 800px;
-            }
-            /* Optional: Makes the sample page fill the window. */
-            html, body {
-                height: 100%;
-                margin: 0;
-                padding: 0;
-            }
-        </style>
-        <div class="row">
-            <div id="map"></div>
-            <script>
-                var map;
-                function initMap() {
-                    map = new google.maps.Map(document.getElementById('map'), {
-                        center: { lat: 37.095142, lng: -95.582413 },
-                        zoom: 8
-                    });
-                }
-            </script>
-            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjNEEZ0o70fOHa8oH3edJJG-YaZSFRCPU&callback=initMap"
-                    async defer></script>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model MySalon_Master.Models.ContactFormModel
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <h3>Send Us Email!</h3>
+            <form asp-action="Index" asp-controller="ContactUs" method="post">
+                <div>
+                    <label asp-for="Name">Please enter your name:</label><br/>
+                    <input type="text" asp-for="Name"/>
+                </div>
+                <div>
+                    <label asp-for="Email">Please enter your email:</label><br/>
+                    <input type="text" asp-for="Email"/>
+                </div>
+                <div>
+                    <label asp-for="Message">Please enter your message:</label><br/>
+                    <textarea asp-for="Message"></textarea>
+                </div>
+                <input type="submit" value="Send Message!"/>
+            </form>
+        </div>
+        <div class="col">
+            <br/>
+            <h3 align="left">Address</h3>
+            <p align="left">1/120 Mitchell Street, Darwin<br/> Northern Territory Pearl st. Boulder, Co. 0820</p>
+            <h3 align="left">Salon Hours:</h3>
+            <p align="left">
+                Monday-Friday: 10am-8pm<br/>
+                Saturday: 10am-5pm <br/>
+                Closed on Sunday 
+            </p>
         </div>
     </div>
+<div class="container">
+        
+    <style>
+                /* Always set the map height explicitly to define the size of the div
+            * element that contains the map. */
+        #map {
+            height: 400px;
+            width: 800px;
+        }
+        /* Optional: Makes the sample page fill the window. */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <div class="row" align="center">
+        <div id="map"></div>
+        <script>
+            var map;
+            function initMap() {
+                map = new google.maps.Map(document.getElementById('map'), {
+                    center: { lat: 37.095142, lng: -95.582413 },
+                    zoom: 8
+                });
+            }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjNEEZ0o70fOHa8oH3edJJG-YaZSFRCPU&callback=initMap"
+                async defer></script>
+
+    </div>
+    
 </div>
+</div>
+    

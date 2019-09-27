@@ -14,6 +14,7 @@ using Microsoft.EntityFrameworkCore;
 using MySalon_Master.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using MySalon_Master.Models;
 
 namespace MySalon_Master
 {
@@ -29,6 +30,25 @@ namespace MySalon_Master
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
+            EmailServerConfiguration config = new EmailServerConfiguration
+            {
+                SmtpPassword = "Mysalon@prt455",
+                SmtpServer = "smtp.live.com",
+                SmtpUsername = "mysalon2019@hotmail.com"
+            };
+
+            EmailAddress fromEmailAddress = new EmailAddress
+            {
+                Address = "mysalon2019@hotmail.com",
+                Name = "Peter Brown"
+            };
+
+            services.AddSingleton<EmailServerConfiguration>(config);
+            services.AddTransient<IEmailService, MailKitEmailService>();
+            services.AddSingleton<EmailAddress>(fromEmailAddress);
+            services.AddMvc();
+
             services.Configure<CookiePolicyOptions>(options =>
             {
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.
@@ -44,19 +64,11 @@ namespace MySalon_Master
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection"),sqlServerOptions => sqlServerOptions.MigrationsAssembly("DAL")));
 
-
-
-
             services.AddDefaultIdentity<IdentityUser>()
                 .AddDefaultUI(UIFramework.Bootstrap4)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
-         
-
-
-
-
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+         services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

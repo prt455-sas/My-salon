@@ -3215,23 +3215,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\heysu\\.nuget\\packages\\": {},
+    "C:\\Users\\patha\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\heysu\\Desktop\\MySalon-Master\\DAL\\DAL.csproj",
+      "projectUniqueName": "C:\\Users\\patha\\OneDrive\\Documents\\My-salon\\MySalon-with DAL\\DAL\\DAL.csproj",
       "projectName": "DAL",
-      "projectPath": "C:\\Users\\heysu\\Desktop\\MySalon-Master\\DAL\\DAL.csproj",
-      "packagesPath": "C:\\Users\\heysu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\heysu\\Desktop\\MySalon-Master\\DAL\\obj\\",
+      "projectPath": "C:\\Users\\patha\\OneDrive\\Documents\\My-salon\\MySalon-with DAL\\DAL\\DAL.csproj",
+      "packagesPath": "C:\\Users\\patha\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\patha\\OneDrive\\Documents\\My-salon\\MySalon-with DAL\\DAL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\heysu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\patha\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

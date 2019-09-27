@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\heysu\\Desktop\\MySalon-Master\\MySalon-Master\\MySalon-Master.csproj": {}
+    "C:\\Users\\patha\\OneDrive\\Documents\\My-salon\\MySalon-with DAL\\MySalon-Master\\MySalon-Master.csproj": {}
   },
   "projects": {
-    "C:\\Users\\heysu\\Desktop\\MySalon-Master\\DAL\\DAL.csproj": {
+    "C:\\Users\\patha\\OneDrive\\Documents\\My-salon\\MySalon-with DAL\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\heysu\\Desktop\\MySalon-Master\\DAL\\DAL.csproj",
+        "projectUniqueName": "C:\\Users\\patha\\OneDrive\\Documents\\My-salon\\MySalon-with DAL\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "C:\\Users\\heysu\\Desktop\\MySalon-Master\\DAL\\DAL.csproj",
-        "packagesPath": "C:\\Users\\heysu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\heysu\\Desktop\\MySalon-Master\\DAL\\obj\\",
+        "projectPath": "C:\\Users\\patha\\OneDrive\\Documents\\My-salon\\MySalon-with DAL\\DAL\\DAL.csproj",
+        "packagesPath": "C:\\Users\\patha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\patha\\OneDrive\\Documents\\My-salon\\MySalon-with DAL\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\heysu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\patha\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -74,20 +74,20 @@
         }
       }
     },
-    "C:\\Users\\heysu\\Desktop\\MySalon-Master\\MySalon-Master\\MySalon-Master.csproj": {
+    "C:\\Users\\patha\\OneDrive\\Documents\\My-salon\\MySalon-with DAL\\MySalon-Master\\MySalon-Master.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\heysu\\Desktop\\MySalon-Master\\MySalon-Master\\MySalon-Master.csproj",
+        "projectUniqueName": "C:\\Users\\patha\\OneDrive\\Documents\\My-salon\\MySalon-with DAL\\MySalon-Master\\MySalon-Master.csproj",
         "projectName": "MySalon-Master",
-        "projectPath": "C:\\Users\\heysu\\Desktop\\MySalon-Master\\MySalon-Master\\MySalon-Master.csproj",
-        "packagesPath": "C:\\Users\\heysu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\heysu\\Desktop\\MySalon-Master\\MySalon-Master\\obj\\",
+        "projectPath": "C:\\Users\\patha\\OneDrive\\Documents\\My-salon\\MySalon-with DAL\\MySalon-Master\\MySalon-Master.csproj",
+        "packagesPath": "C:\\Users\\patha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\patha\\OneDrive\\Documents\\My-salon\\MySalon-with DAL\\MySalon-Master\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\heysu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\patha\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -100,8 +100,8 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\Users\\heysu\\Desktop\\MySalon-Master\\DAL\\DAL.csproj": {
-                "projectPath": "C:\\Users\\heysu\\Desktop\\MySalon-Master\\DAL\\DAL.csproj"
+              "C:\\Users\\patha\\OneDrive\\Documents\\My-salon\\MySalon-with DAL\\DAL\\DAL.csproj": {
+                "projectPath": "C:\\Users\\patha\\OneDrive\\Documents\\My-salon\\MySalon-with DAL\\DAL\\DAL.csproj"
               }
             }
           }
@@ -135,6 +135,14 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[2.2.3, )"
+            },
+            "MimeKit": {
+              "target": "Package",
+              "version": "[2.3.1, )"
+            },
+            "NETCore.MailKit": {
+              "target": "Package",
+              "version": "[2.0.2, )"
             }
           },
           "imports": [
