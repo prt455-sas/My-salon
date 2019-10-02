@@ -1,0 +1,56 @@
+﻿@model IEnumerable<MySalon_Master.Models.Appointment>  
+@{
+    ViewData["Title"] = "Index";
+}
+<div class="container mt-4">
+    <h5>Online Booking</h5>
+    <p>
+        <a class="btn btn-primary" asp-action="Create">Create New</a>
+    </p>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.BookedDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BookTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UserId)
+            </th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BookedDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BookTime)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UserId)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+    
+    @*@if (Model.UserEmail.Any())
+    {
+        foreach (var user in Model.UserEmail)
+        {
+            <h5 class="card-title">@user</h5>
+            <h5>@Model.Id</h5>
+        }
+    }*@
+</div>
