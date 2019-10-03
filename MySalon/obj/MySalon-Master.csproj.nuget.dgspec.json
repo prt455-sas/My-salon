@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\heysu\\Downloads\\SalonApp-First\\MySalon-Master (new)\\MySalon-Master.csproj": {}
+    "C:\\Users\\heysu\\Documents\\My-salon\\MySalon\\MySalon-Master.csproj": {}
   },
   "projects": {
-    "C:\\Users\\heysu\\Downloads\\SalonApp-First\\MySalon-Master (new)\\MySalon-Master.csproj": {
+    "C:\\Users\\heysu\\Documents\\My-salon\\MySalon\\MySalon-Master.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\heysu\\Downloads\\SalonApp-First\\MySalon-Master (new)\\MySalon-Master.csproj",
+        "projectUniqueName": "C:\\Users\\heysu\\Documents\\My-salon\\MySalon\\MySalon-Master.csproj",
         "projectName": "MySalon-Master",
-        "projectPath": "C:\\Users\\heysu\\Downloads\\SalonApp-First\\MySalon-Master (new)\\MySalon-Master.csproj",
+        "projectPath": "C:\\Users\\heysu\\Documents\\My-salon\\MySalon\\MySalon-Master.csproj",
         "packagesPath": "C:\\Users\\heysu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\heysu\\Downloads\\SalonApp-First\\MySalon-Master (new)\\obj\\",
+        "outputPath": "C:\\Users\\heysu\\Documents\\My-salon\\MySalon\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
