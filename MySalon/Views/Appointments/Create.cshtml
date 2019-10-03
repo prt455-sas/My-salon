@@ -20,12 +20,12 @@
                         <span asp-validation-for="BookTime" class="text-danger"></span>
                         <br/>
                         <div class="form-control">
-                       @Html.DropDownListFor(m=>m.TimeRangeID,new SelectList(ViewBag.TimeRangeList,"Id","Range"),"Select")
+                       @Html.DropDownListFor(m=>m.TimeRangeID,new SelectList(ViewBag.TimeRangeList,"Id","Range"),"Select Time")
                         </div> 
                        </div>
                     <div class="form-group booking-fields-color">
                         <label asp-for="UserId" class="control-label"></label>
-                        <input asp-for="UserId" class="form-control" value="@ViewBag.email"/>
+                        <input asp-for="UserId" class="form-control" readonly value="@ViewBag.email"/>
                         <span asp-validation-for="UserId" class="text-danger"></span>
                     </div>
                     <div class="form-group">
