@@ -7,8 +7,8 @@
     <p>
         <a class="btn btn-primary" asp-action="Create">Create New</a>
     </p>
-    <table class="table">
-        <thead>
+    <table class="table table-hover">
+        <thead class="bg-primary">
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.BookedDate)
@@ -25,7 +25,7 @@
         <tbody>
         @foreach (var item in Model)
         {
-            <tr>
+            <tr class="bg-secondary">
                 <td>
                     @Html.DisplayFor(modelItem => item.BookedDate)
                 </td>
