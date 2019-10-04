@@ -14,6 +14,8 @@ using MySalon_Master.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using MySalon_Master.Models;
+using Microsoft.AspNetCore.Identity.UI.Services;
+using MySalon_Master.Services;
 
 namespace MySalon_Master
 {
@@ -59,9 +61,20 @@ namespace MySalon_Master
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
-            services.AddDefaultIdentity<IdentityUser>()
-                .AddDefaultUI(UIFramework.Bootstrap4)
-                .AddEntityFrameworkStores<ApplicationDbContext>();
+
+            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedEmail = true)
+                
+                    .AddDefaultUI(UIFramework.Bootstrap4)
+
+                    .AddEntityFrameworkStores<ApplicationDbContext>();
+
+
+            // requires
+            // using Microsoft.AspNetCore.Identity.UI.Services;
+            // using WebPWrecover.Services;
+            services.AddTransient<IEmailSender, EmailSender>();
+            services.Configure<AuthMessageSenderOptions>(Configuration);
+
 
             services.AddAuthentication()
                 .AddGoogle(options =>
