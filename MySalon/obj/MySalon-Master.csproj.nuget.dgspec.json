@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\heysu\\Documents\\My-salon\\MySalon\\MySalon-Master.csproj": {}
+    "D:\\Visual Studio Samples\\C#_Samples\\S309147\\My-salon\\MySalon\\MySalon-Master.csproj": {}
   },
   "projects": {
-    "C:\\Users\\heysu\\Documents\\My-salon\\MySalon\\MySalon-Master.csproj": {
+    "D:\\Visual Studio Samples\\C#_Samples\\S309147\\My-salon\\MySalon\\MySalon-Master.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\heysu\\Documents\\My-salon\\MySalon\\MySalon-Master.csproj",
+        "projectUniqueName": "D:\\Visual Studio Samples\\C#_Samples\\S309147\\My-salon\\MySalon\\MySalon-Master.csproj",
         "projectName": "MySalon-Master",
-        "projectPath": "C:\\Users\\heysu\\Documents\\My-salon\\MySalon\\MySalon-Master.csproj",
-        "packagesPath": "C:\\Users\\heysu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\heysu\\Documents\\My-salon\\MySalon\\obj\\",
+        "projectPath": "D:\\Visual Studio Samples\\C#_Samples\\S309147\\My-salon\\MySalon\\MySalon-Master.csproj",
+        "packagesPath": "C:\\Users\\Angi\\.nuget\\packages\\",
+        "outputPath": "D:\\Visual Studio Samples\\C#_Samples\\S309147\\My-salon\\MySalon\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\heysu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Angi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -60,7 +60,7 @@
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[2.2.3, )"
+              "version": "[3.0.0, )"
             },
             "MimeKit": {
               "target": "Package",
@@ -69,13 +69,23 @@
             "NETCore.MailKit": {
               "target": "Package",
               "version": "[2.0.2, )"
+            },
+            "SendGrid": {
+              "target": "Package",
+              "version": "[9.12.0, )"
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
