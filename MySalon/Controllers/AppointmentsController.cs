@@ -20,10 +20,10 @@ namespace MySalon_Master.Controllers
     public class AppointmentsController : Controller
     {
         private readonly ApplicationDbContext _context;
-        private UserManager<IdentityUser> _signinuser;
+        private UserManager<ApplicationUser> _signinuser;
 
 
-        public AppointmentsController(ApplicationDbContext context, UserManager<IdentityUser> user)
+        public AppointmentsController(ApplicationDbContext context, UserManager<ApplicationUser> user)
         {
             _context = context;
             _signinuser = user;
