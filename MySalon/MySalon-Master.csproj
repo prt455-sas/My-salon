@@ -27,6 +27,7 @@
 
 
   <ItemGroup>
+    <Folder Include="Controllers\Admin\" />
     <Folder Include="Data\Migrations\" />
     <Folder Include="wwwroot\Images\" />
   </ItemGroup>

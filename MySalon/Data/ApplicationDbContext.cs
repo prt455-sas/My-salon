@@ -9,14 +9,14 @@ using MySalon_Master.Models;
 
 namespace MySalon_Master.Data
 {
-    public class ApplicationDbContext : IdentityDbContext
+    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
-        private readonly IHttpContextAccessor _httpContextAccessor;
+       
 
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options, IHttpContextAccessor httpContextAccessor)
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
-            _httpContextAccessor = httpContextAccessor;
+            
         }
         
         public DbSet<Appointment> Appointment { get; set; }

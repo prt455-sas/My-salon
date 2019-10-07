@@ -16,6 +16,9 @@ using Microsoft.Extensions.DependencyInjection;
 using MySalon_Master.Models;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using MySalon_Master.Services;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc.Authorization;
 
 namespace MySalon_Master
 {
@@ -62,12 +65,18 @@ namespace MySalon_Master
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedEmail = true)
-                
-                    .AddDefaultUI(UIFramework.Bootstrap4)
-
-                    .AddEntityFrameworkStores<ApplicationDbContext>();
-
+            services.AddIdentity<ApplicationUser, IdentityRole>(options =>
+                {
+                    options.Password.RequireDigit = true;//need number (0-9).
+                    options.Password.RequiredLength = 6;//Length
+                    options.Password.RequireNonAlphanumeric = true;//Need symbol
+                    options.Password.RequireUppercase = true;//Need Uppercase
+                    options.Password.RequireLowercase = true;//Need Lowercase
+                    options.Password.RequiredUniqueChars = 1;
+                })
+                .AddDefaultUI(UIFramework.Bootstrap4)
+                .AddEntityFrameworkStores<ApplicationDbContext>()
+                .AddDefaultTokenProviders();
 
             // requires
             // using Microsoft.AspNetCore.Identity.UI.Services;
@@ -101,7 +110,7 @@ namespace MySalon_Master
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, IServiceProvider serviceProvider)
         {
             if (env.IsDevelopment())
             {
@@ -127,6 +136,39 @@ namespace MySalon_Master
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+            CreateRoles(serviceProvider).Wait();
+        }
+        private async Task CreateRoles(IServiceProvider serviceProvider)
+        {
+            //initializing custom roles   
+            var RoleManager = serviceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+            var UserManager = serviceProvider.GetRequiredService<UserManager<ApplicationUser>>();
+            string[] roleNames = { "Admin", "User" };
+            IdentityResult roleResult;
+
+            foreach (var roleName in roleNames)
+            {
+                var roleExist = await RoleManager.RoleExistsAsync(roleName);
+                if (!roleExist)
+                {
+                    //create the roles and seed them to the database
+                    roleResult = await RoleManager.CreateAsync(new IdentityRole(roleName));
+                }
+            }
+
+            ApplicationUser user = await UserManager.FindByEmailAsync("mysalon2019@hotmail.com");
+
+            if (user == null)
+            {
+                user = new ApplicationUser()
+                {
+                    UserName = "mysalon2019@hotmail.com",
+                    Email = "mysalon2019@hotmail.com"
+                };
+                await UserManager.CreateAsync(user, "Mysalon2019@prt455");
+            }
+            await UserManager.AddToRoleAsync(user, "Admin");
+
         }
     }
 }
