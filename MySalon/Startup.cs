@@ -68,7 +68,7 @@ namespace MySalon_Master
             services.AddIdentity<ApplicationUser, IdentityRole>(options =>
                 {
                     options.Password.RequireDigit = true;//need number (0-9).
-                    options.Password.RequiredLength = 6;//Length
+                    options.Password.RequiredLength = 8;//Length
                     options.Password.RequireNonAlphanumeric = true;//Need symbol
                     options.Password.RequireUppercase = true;//Need Uppercase
                     options.Password.RequireLowercase = true;//Need Lowercase

@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Identity;
 
 namespace MySalon_Master.Models
 {
-    public class ApplicationUser: IdentityUser
+    public class ApplicationUser : IdentityUser
     {
         public override string Email { get; set; }
     }

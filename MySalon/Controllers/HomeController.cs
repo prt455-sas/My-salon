@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using MySalon_Master.Data;
 using Microsoft.AspNetCore.Mvc;
 using MySalon_Master.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace MySalon_Master.Controllers
 {

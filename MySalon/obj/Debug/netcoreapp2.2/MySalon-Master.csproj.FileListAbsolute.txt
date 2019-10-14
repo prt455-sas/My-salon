@@ -611,3 +611,7 @@ C:\Users\patha\OneDrive\Desktop\Mysalon\MySalon\obj\Debug\netcoreapp2.2\Razor\Vi
 C:\Users\patha\OneDrive\Desktop\Mysalon\MySalon\obj\Debug\netcoreapp2.2\Razor\Views\AdminPanel\Reports.g.cshtml.cs
 C:\Users\patha\OneDrive\Desktop\Mysalon\MySalon\obj\Debug\netcoreapp2.2\Razor\Views\ManageUser\UserInfo.g.cshtml.cs
 C:\Users\patha\OneDrive\Desktop\Mysalon\MySalon\obj\Debug\netcoreapp2.2\Razor\Views\ManageUser\UserManagement.g.cshtml.cs
+D:\Visual Studio Samples\C#_Samples\S309147\My-salon\MySalon\obj\Debug\netcoreapp2.2\Razor\Views\AdminPanel\Index.cshtml.g.cs
+D:\Visual Studio Samples\C#_Samples\S309147\My-salon\MySalon\obj\Debug\netcoreapp2.2\Razor\Views\AdminPanel\Reports.cshtml.g.cs
+D:\Visual Studio Samples\C#_Samples\S309147\My-salon\MySalon\obj\Debug\netcoreapp2.2\Razor\Views\ManageUser\UserInfo.cshtml.g.cs
+D:\Visual Studio Samples\C#_Samples\S309147\My-salon\MySalon\obj\Debug\netcoreapp2.2\Razor\Views\ManageUser\UserManagement.cshtml.g.cs

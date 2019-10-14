@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Microsoft.AspNetCore.Http;
+using MySalon_Master.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using MySalon_Master.Models;
 
 
 namespace MySalon_Master.Data

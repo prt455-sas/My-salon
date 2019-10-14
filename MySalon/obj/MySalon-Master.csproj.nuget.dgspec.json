@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\patha\\OneDrive\\Desktop\\Mysalon\\MySalon\\MySalon-Master.csproj": {}
+    "D:\\Visual Studio Samples\\C#_Samples\\S309147\\My-salon\\MySalon\\MySalon-Master.csproj": {}
   },
   "projects": {
-    "C:\\Users\\patha\\OneDrive\\Desktop\\Mysalon\\MySalon\\MySalon-Master.csproj": {
+    "D:\\Visual Studio Samples\\C#_Samples\\S309147\\My-salon\\MySalon\\MySalon-Master.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\patha\\OneDrive\\Desktop\\Mysalon\\MySalon\\MySalon-Master.csproj",
+        "projectUniqueName": "D:\\Visual Studio Samples\\C#_Samples\\S309147\\My-salon\\MySalon\\MySalon-Master.csproj",
         "projectName": "MySalon-Master",
-        "projectPath": "C:\\Users\\patha\\OneDrive\\Desktop\\Mysalon\\MySalon\\MySalon-Master.csproj",
-        "packagesPath": "C:\\Users\\patha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\patha\\OneDrive\\Desktop\\Mysalon\\MySalon\\obj\\",
+        "projectPath": "D:\\Visual Studio Samples\\C#_Samples\\S309147\\My-salon\\MySalon\\MySalon-Master.csproj",
+        "packagesPath": "C:\\Users\\Angi\\.nuget\\packages\\",
+        "outputPath": "D:\\Visual Studio Samples\\C#_Samples\\S309147\\My-salon\\MySalon\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\patha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Angi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -76,10 +76,16 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
