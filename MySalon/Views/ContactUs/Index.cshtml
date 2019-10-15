@@ -11,15 +11,15 @@
             <h3>Send Us Email!</h3>
             <form asp-action="Index" asp-controller="ContactUs" method="post">
                 <div class="form-group">
-                    <label asp-for="Name">Your Name:</label><br/>
-                    <input type="text" asp-for="Name" placeholder="Name" class="form-control"/>
+                    <label asp-for="Name">Your Name:</label><br />
+                    <input type="text" asp-for="Name" placeholder="Name" class="form-control" />
                 </div>
                 <div class="form-group">
-                    <label asp-for="Email">Your Email:</label><br/>
-                    <input type="text" asp-for="Email" placeholder="Email address" class="form-control"/>
+                    <label asp-for="Email">Your Email:</label><br />
+                    <input type="text" asp-for="Email" placeholder="Email address" class="form-control" />
                 </div>
                 <div class="form-group">
-                    <label asp-for="Message">Your Message:</label><br/>
+                    <label asp-for="Message">Your Message:</label><br />
                     <textarea asp-for="Message" placeholder="Message Here" class="form-control"></textarea>
                 </div>
                 <button class="btn btn-primary" type="submit" value="Send Message!">Send Message</button>
@@ -27,12 +27,12 @@
         </div>
         <div class="col">
             <h3 align="left">Address</h3>
-            <p align="left">1/120 Mitchell Street, Darwin<br/> Northern Territory Pearl st. Boulder, Co. 0820</p>
+            <p align="left">1/120 Mitchell Street, Darwin<br /> Northern Territory Pearl st. Boulder, Co. 0820</p>
             <h3 align="left">Salon Hours:</h3>
             <p align="left">
-                Monday-Friday: 10am-8pm<br/>
-                Saturday: 10am-5pm <br/>
-                Closed on Sunday 
+                Monday-Friday: 10am-8pm<br />
+                Saturday: 10am-5pm <br />
+                Closed on Sunday
             </p>
         </div>
     </div>
@@ -86,55 +86,54 @@
 
             </script>
             <!--
-        <div id="map"></div>
-        <script>
-            // Note: This example requires that you consent to location sharing when
-            // prompted by your browser. If you see the error "The Geolocation service
-            // failed.", it means you probably did not give permission for the browser to
-            // locate you.
-            var map, infoWindow;
-            function initMap() {
-                map = new google.maps.Map(document.getElementById('map'), {
-                    center: { lat: -34.397, lng: 150.644 },
-                    zoom: 6
-                });
-                infoWindow = new google.maps.InfoWindow;
-
-                // Try HTML5 geolocation.
-                if (navigator.geolocation) {
-                    navigator.geolocation.getCurrentPosition(function (position) {
-                        var pos = {
-                            lat: position.coords.latitude,
-                            lng: position.coords.longitude
-                        };
-
-                        infoWindow.setPosition(pos);
-                        infoWindow.setContent('Location found.');
-                        infoWindow.open(map);
-                        map.setCenter(pos);
-                    }, function () {
-                        handleLocationError(true, infoWindow, map.getCenter());
+            <div id="map"></div>
+            <script>
+                // Note: This example requires that you consent to location sharing when
+                // prompted by your browser. If you see the error "The Geolocation service
+                // failed.", it means you probably did not give permission for the browser to
+                // locate you.
+                var map, infoWindow;
+                function initMap() {
+                    map = new google.maps.Map(document.getElementById('map'), {
+                        center: { lat: -34.397, lng: 150.644 },
+                        zoom: 6
                     });
-                } else {
-                    // Browser doesn't support Geolocation
-                    handleLocationError(false, infoWindow, map.getCenter());
-                }
-            }
+                    infoWindow = new google.maps.InfoWindow;
 
-            function handleLocationError(browserHasGeolocation, infoWindow, pos) {
-                infoWindow.setPosition(pos);
-                infoWindow.setContent(browserHasGeolocation ?
-                    'Error: The Geolocation service failed.' :
-                    'Error: Your browser doesn\'t support geolocation.');
-                infoWindow.open(map);
-            }
-        </script>
-        -->
-            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjNEEZ0o70fOHa8oH3edJJG-YaZSFRCPU&callback=initMap"
+                    // Try HTML5 geolocation.
+                    if (navigator.geolocation) {
+                        navigator.geolocation.getCurrentPosition(function (position) {
+                            var pos = {
+                                lat: position.coords.latitude,
+                                lng: position.coords.longitude
+                            };
+
+                            infoWindow.setPosition(pos);
+                            infoWindow.setContent('Location found.');
+                            infoWindow.open(map);
+                            map.setCenter(pos);
+                        }, function () {
+                            handleLocationError(true, infoWindow, map.getCenter());
+                        });
+                    } else {
+                        // Browser doesn't support Geolocation
+                        handleLocationError(false, infoWindow, map.getCenter());
+                    }
+                }
+
+                function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+                    infoWindow.setPosition(pos);
+                    infoWindow.setContent(browserHasGeolocation ?
+                        'Error: The Geolocation service failed.' :
+                        'Error: Your browser doesn\'t support geolocation.');
+                    infoWindow.open(map);
+                }
+            </script>
+            -->
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEdIQ7oRc5vk01yP0NrGWW7EEJ-6N2DQE&callback=initMap"
                     async defer></script>
             <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
         </div>
 
     </div>
 </div>
-    
