@@ -615,3 +615,7 @@ D:\Visual Studio Samples\C#_Samples\S309147\My-salon\MySalon\obj\Debug\netcoreap
 D:\Visual Studio Samples\C#_Samples\S309147\My-salon\MySalon\obj\Debug\netcoreapp2.2\Razor\Views\AdminPanel\Reports.cshtml.g.cs
 D:\Visual Studio Samples\C#_Samples\S309147\My-salon\MySalon\obj\Debug\netcoreapp2.2\Razor\Views\ManageUser\UserInfo.cshtml.g.cs
 D:\Visual Studio Samples\C#_Samples\S309147\My-salon\MySalon\obj\Debug\netcoreapp2.2\Razor\Views\ManageUser\UserManagement.cshtml.g.cs
+D:\Visual Studio Samples\C#_Samples\S309147\My-salon\MySalon\obj\Debug\netcoreapp2.2\Razor\Views\ManageAppointment\Confirm.cshtml.g.cs
+D:\Visual Studio Samples\C#_Samples\S309147\My-salon\MySalon\obj\Debug\netcoreapp2.2\Razor\Views\ManageAppointment\Index.cshtml.g.cs
+D:\Visual Studio Samples\C#_Samples\S309147\My-salon\MySalon\obj\Debug\netcoreapp2.2\Razor\Views\ManageAppointment\Pending.cshtml.g.cs
+D:\Visual Studio Samples\C#_Samples\S309147\My-salon\MySalon\obj\Debug\netcoreapp2.2\Razor\Views\ManageAppointment\Reject.cshtml.g.cs

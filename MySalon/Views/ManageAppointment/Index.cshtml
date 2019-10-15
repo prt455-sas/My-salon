@@ -1,0 +1,67 @@
+﻿@model IEnumerable<MySalon_Master.Models.Appointment>
+@{
+    ViewData["Title"] = "Index";
+}
+<div class="container mt-4">
+    <h5>Online Booking</h5>
+    <p>
+        <a class="btn btn-primary" asp-action="Create">Create New</a>
+    </p>
+    <table class="table table-hover">
+        <thead class="bg-primary">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.BookedDate)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.BookTime)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.UserId)
+                </th>
+                <th>
+                    Controls
+                </th>
+                <th>
+                    Status
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr class="bg-secondary">
+                    <td>
+                        @Html.DisplayFor(modelItem => item.BookedDate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.BookTime)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UserId)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    </td>
+                    <td>
+                        <span>Confirm</span>
+                        <!--|
+                        <span>Pending</span> |
+                        <span>Reject</span> -->
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    @*@if (Model.UserEmail.Any())
+        {
+            foreach (var user in Model.UserEmail)
+            {
+                <h5 class="card-title">@user</h5>
+                <h5>@Model.Id</h5>
+            }
+        }*@
+</div>

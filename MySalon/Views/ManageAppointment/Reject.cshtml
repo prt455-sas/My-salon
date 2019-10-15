@@ -1,0 +1,39 @@
+﻿@model MySalon_Master.Models.Appointment
+
+@{
+    ViewData["Title"] = "Reject";
+}
+<div class="container mt-4">
+    <h1>Reject</h1>
+    <h4>Are you sure you want to reject the user?</h4>
+    <div>
+        <h4>Appointment</h4>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.BookedDate)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.BookedDate)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.BookedTime)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.BookedTime)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.UserId)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.UserId)
+            </dd>
+        </dl>
+
+        <form asp-action="Delete">
+            <input type="hidden" asp-for="Id" />
+            <input type="submit" value="Reject" class="btn btn-danger" /> |
+            <a asp-action="Index">Back to List</a>
+        </form>
+    </div>
+</div>
